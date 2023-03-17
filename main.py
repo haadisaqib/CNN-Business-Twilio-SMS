@@ -21,7 +21,6 @@ while True:
             soup = BeautifulSoup(page.content, "html.parser")
             headlines = soup.find_all("div", class_="container__headline container_lead-plus-headlines__headline")
             headlines = [headline.text.strip() for headline in headlines]
-            ##headlines = headlines = headlines[:5]
             print(headlines)
 
             # Format the message
